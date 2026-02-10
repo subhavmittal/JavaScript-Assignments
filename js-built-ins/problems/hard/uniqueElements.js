@@ -19,6 +19,12 @@
 */
 
 function getUniqueElements(arr) {
+  const uniqueElements = new Set()
+  for (let index = 0; index < arr.length; index++) {
+    const element = arr[index]
+    uniqueElements.add(element)
+  }
+  return Array.from(uniqueElements)
   // Your code here
 }
 
